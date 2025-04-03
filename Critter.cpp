@@ -11,7 +11,7 @@ int Critter::getId() const{
   return id;
 }
 
-void Critter::display() {
+void Critter::display() const {
     cout << "Critter " << id << " here." <<endl;
 }
 

@@ -8,8 +8,8 @@ private:
 public:
     Critter(int id);    // no-arg constructor
     int getId() const;  // designates that the function will not change any member fields
-    void display();
-    friend std::ostream& operator<<(std::istream& is, const Critter& critter);
+    void display() const;
+    friend std::ostream& operator<<(std::ostream& os, const Critter& critter);
 };
 
 #endif //CRITTER_H
