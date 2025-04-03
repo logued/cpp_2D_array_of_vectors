@@ -2,7 +2,6 @@
 #include <vector>
 #include <array>
 #include <list>
-
 #include "Critter.h"
 
 using namespace std;
