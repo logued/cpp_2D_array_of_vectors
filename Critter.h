@@ -1,23 +1,15 @@
-//
-// Created by logued on 01/04/2025.
-//
-
 #ifndef CRITTER_H
 #define CRITTER_H
-#include<string>
-
+#include<iostream>
 
 class Critter {
-
-    private:
-    std::string name;
-
-    public:
-        Critter();   // no-arg constructor
-        void display();
-
+private:
+    int id;
+public:
+    Critter(int id);    // no-arg constructor
+    int getId() const;  // designates that the function will not change any member fields
+    void display();
+    friend std::ostream& operator<<(std::istream& is, const Critter& critter);
 };
-
-
 
 #endif //CRITTER_H
